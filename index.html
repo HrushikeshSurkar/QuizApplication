@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="display: flex;justify-content: center;">Quiz Application</h1>
+    <div class="container">
+        <div id="start-quiz" onclick="startQuiz()">Start the quiz</div>
+        <div id="quiz" style="display: none;">
+            <div id="options">
+                <div id="question"> What is 2 + 2</div>
+                <input type="radio" name="option" id="option1">
+                <label for="option1" id="option1Text">1</label> <br>
+                <input type="radio" name="option" id="option2">
+                <label for="option1" id="option2Text">4</label> <br>
+                <input type="radio" name="option" id="option3">
+                <label for="option1" id="option3Text">5</label> <br>
+                <input type="radio" name="option" id="option4">
+                <label for="option1" id="option4Text">10</label> <br>
+            </div>
+            <button id="submit" onclick="checkAnswer()">Submit Answer</button>
+            <div id="feedback">feedback goes here</div>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>Your Score</h2>
+            <div id="scoreResult">Score goes here</div>
+            <button id="restart" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
